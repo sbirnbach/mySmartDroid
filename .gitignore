@@ -4,5 +4,6 @@ local.properties
 #swap files created by vim
 *.swp
 
-the bin folder, containing the files created by ant
+bin and gen folder, containing the files created by ant
 bin/*
+gen/*
