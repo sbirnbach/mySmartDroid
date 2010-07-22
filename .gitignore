@@ -1,2 +1,8 @@
 # noone has to know that
 local.properties
+
+#swap files created by vim
+*.swp
+
+the bin folder, containing the files created by ant
+bin/*
