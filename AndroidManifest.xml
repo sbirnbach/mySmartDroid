@@ -11,5 +11,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+		<activity android:name=".hourActivity"
+				android:label="@string/hour_tab">
+		</activity>
+		<activity android:name=".dayActivity"
+				android:label="@string/day_tab">
+		</activity>
+		<activity android:name=".monthActivity"
+				android:label="@string/month_tab">
+		</activity>
+		<activity android:name=".yearActivity"
+				android:label="@string/year_tab">
+		</activity>
+		<activity android:name=".nightActivity"
+				android:label="@string/night_tab">
+		</activity>
     </application>
 </manifest> 
