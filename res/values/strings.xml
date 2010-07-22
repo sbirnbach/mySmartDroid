@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">mySmartDroidActivity</string>
+    <string name="app_name">mySmartDroid</string>
     <string name="hour_tab">Graph</string>
     <string name="day_tab">Graph</string>
     <string name="month_tab">Graph</string>
