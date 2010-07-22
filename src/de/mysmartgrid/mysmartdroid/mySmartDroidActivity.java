@@ -8,12 +8,12 @@ import android.os.Bundle;
 
 public class mySmartDroidActivity extends TabActivity
 {
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
 
 		TabHost tabhost = getTabHost();
 		TabHost.TabSpec spec;
@@ -46,5 +46,5 @@ public class mySmartDroidActivity extends TabActivity
 
 		tabhost.setCurrentTabByTag("hour");
 
-    }
+	}
 }
