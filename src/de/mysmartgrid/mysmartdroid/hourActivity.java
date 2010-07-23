@@ -2,6 +2,8 @@ package de.mysmartgrid.mysmartdroid;
 
 import android.app.Activity;
 import android.widget.TextView;
+import android.webkit.WebView;
+import android.view.View;
 import android.os.Bundle;
 
 public class hourActivity extends Activity
@@ -12,8 +14,12 @@ public class hourActivity extends Activity
     {
         super.onCreate(savedInstanceState);
 
-		TextView textview = new TextView(this);
-		textview.setText("This is the hour tab.");
-        setContentView(textview);
+		WebView wv = new WebView(this);
+
+		wv.getSettings().setJavaScriptEnabled(true);
+		setContentView(wv);
+		wv.loadUrl("file:///android_asset/flot/examples/basic.html");
+
+
     }
 }
