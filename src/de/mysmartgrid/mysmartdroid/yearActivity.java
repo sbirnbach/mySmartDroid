@@ -6,14 +6,14 @@ import android.os.Bundle;
 
 public class yearActivity extends Activity
 {
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
+		/** Called when the activity is first created. */
+		@Override
+		public void onCreate(Bundle savedInstanceState)
+		{
+				super.onCreate(savedInstanceState);
 
-		TextView textview = new TextView(this);
-		textview.setText("This is the year tab.");
-        setContentView(textview);
-    }
+				TextView textview = new TextView(this);
+				textview.setText("This is the year tab.");
+				setContentView(textview);
+		}
 }

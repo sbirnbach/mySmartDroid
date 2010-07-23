@@ -6,14 +6,19 @@ import android.content.Intent;
 import android.widget.TabHost;
 import android.os.Bundle;
 
+//import some classes needed for the meny
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MenuInflater;
+
 public class mySmartDroidActivity extends TabActivity
 {
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
 
 		TabHost tabhost = getTabHost();
 		TabHost.TabSpec spec;
@@ -46,5 +51,28 @@ public class mySmartDroidActivity extends TabActivity
 
 		tabhost.setCurrentTabByTag("hour");
 
-    }
+	}
+
+	//inflate menu from res/main.xml
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	// Handle item selection
+	switch (item.getItemId()) {
+		case R.id.options:
+			Intent settings = new Intent(this, settingsActivity.class);
+			startActivityForResult(settings, 0);
+		case R.id.quit:
+			finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+	}
 }
