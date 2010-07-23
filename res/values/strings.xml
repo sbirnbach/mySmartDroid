@@ -6,4 +6,5 @@
     <string name="month_tab">Graph</string>
     <string name="year_tab">Graph</string>
     <string name="night_tab">Graph</string>
+		<string name="settings">Settings</string>
 </resources>

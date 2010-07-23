@@ -66,7 +66,8 @@ public class mySmartDroidActivity extends TabActivity
 	// Handle item selection
 	switch (item.getItemId()) {
 		case R.id.options:
-			return true;
+			Intent settings = new Intent(this, settingsActivity.class);
+			startActivityForResult(settings, 0);
 		case R.id.quit:
 			finish();
 			return true;
